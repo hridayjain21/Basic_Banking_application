@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#141a33"
+    android:layout_height="match_parent"
+    tools:context=".Transaction_list">
+
+    <TextView
+        android:id="@+id/transaction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="15dp"
+        android:text="Transactions"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:id="@+id/transaction_recycler"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@id/transaction_title"
+        android:layout_marginTop="25dp"/>
+
+
+
+</RelativeLayout>
